@@ -368,12 +368,12 @@ export interface ApiChatChat extends Schema.CollectionType {
     singularName: 'chat';
     pluralName: 'chats';
     displayName: 'chat';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    userId: Attribute.String & Attribute.Required;
     text: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
